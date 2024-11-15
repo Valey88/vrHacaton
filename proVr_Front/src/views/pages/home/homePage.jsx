@@ -29,10 +29,10 @@ export const homePage = () => {
             <button
               onClick={(event) => {
                 event.preventDefault();
-                window.location.href = "/registration";
+                window.location.href = "/#";
               }}
             >
-              Регистрация команды
+              Регистрация завершина
             </button>
           </div>
         </div>
@@ -44,7 +44,7 @@ export const homePage = () => {
             <button
               onClick={(event) => {
                 event.preventDefault();
-                window.location.href = "/registration";
+                window.location.href = "/#";
               }}
             >
               Скачать задание
@@ -55,8 +55,37 @@ export const homePage = () => {
           <h2>4 Загрузи тестовое задание, что бы мы оценили его</h2>
           <TestFormUploads />
         </div>
+        <div className={styles.homePage_sectionsRegistration__title_button}>
+          <h2>5 Ознакомиться с результатами хакатона</h2>
+          <div>
+            <a
+              href="/РЕЗУЛЬТАТЫ.doc"
+              download
+              style={{
+                fontSize: "20px",
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Скачать результаты
+            </a>
+          </div>
+        </div>
         <div className={styles.homePage_sections6}>
           <HomeSections6 />
+          <div style={{ marginTop: "50px" }}>
+            <a
+              href="/Положение Хакатон.pdf"
+              download
+              style={{
+                fontSize: "20px",
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Скачать положение
+            </a>
+          </div>
         </div>
       </div>
     </div>
